@@ -1,4 +1,4 @@
-# WP-CONFIG-SCAM - Check Wrong WordPress Settings 
+# WP-CONFIG-SCAN - Check Wrong WordPress Settings 
 
 <div align="center"> 
   
@@ -14,7 +14,6 @@ Check if the WordPress page you are auditing has the typical vulnerable configur
 git clone https://github.com/micro-joan/wp-config-scan
 chmod +x wp-config-scan.sh
 ./wp-config-scan.sh https://wordpress_site.com
-
 ```
 
 <div align="center"> 
