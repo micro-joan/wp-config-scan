@@ -19,5 +19,5 @@ chmod +x wp-config-scan.sh
 <div align="center"> 
   
   ![Untitled Project](https://github.com/micro-joan/wp-config-scan/assets/55983491/f9a0a101-9d53-47f8-b9e2-90aaeb575f6f)
-
+  
 </div>
