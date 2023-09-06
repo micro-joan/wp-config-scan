@@ -127,5 +127,98 @@ fi
 
 sleep 1
 
+#comprobamos si existen archivos interesantes en la raiz del sitio
+echo -e "\e[38;5;208m Checking interesting files... \e[0m"
+
+if curl -I "$url/htaccess_old" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /htaccess_old is up! \e[0m"
+else
+    echo -e "\033[31m /htaccess_old is KO \033[0m"
+fi
+
+sleep 1
+
+if curl -I "$url/htaccess_bk" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /htaccess_bk is up! \e[0m"
+else
+    echo -e "\033[31m /htaccess_bk is KO \033[0m"
+fi
+
+sleep 1
+
+if curl -I "$url/htaccess.txt" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /htaccess.txt is up! \e[0m"
+else
+    echo -e "\033[31m /htaccess.txt is KO \033[0m"
+fi
+
+sleep 1
+
+if curl -I "$url/bbdd.sql" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /bbdd.sql is up! \e[0m"
+else
+    echo -e "\033[31m /bbdd.sql is KO \033[0m"
+fi
+
+sleep 1
+
+if curl -I "$url/mysql.sql" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /mysql.sql is up! \e[0m"
+else
+    echo -e "\033[31m /mysql.sql is KO \033[0m"
+fi
+
+sleep 1
+
+if curl -I "$url/basededatos.sql" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /basededatos.sql is up! \e[0m"
+else
+    echo -e "\033[31m /basededatos.sql is KO \033[0m"
+fi
+
+sleep 1
+
+if curl -I "$url/database.sql" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /database.sql is up! \e[0m"
+else
+    echo -e "\033[31m /database.sql is KO \033[0m"
+fi
+
+sleep 1
+
+if curl -I "$url/wp-config.php_old" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /wp-config.php_old is up! \e[0m"
+else
+    echo -e "\033[31m /wp-config.php_old is KO \033[0m"
+fi
+
+sleep 1
+
+if curl -I "$url/wp-config.php_bk" >/dev/null 2>&1; then
+
+    echo ""
+    echo -e "\e[32m /wp-config.php_bk is up! \e[0m"
+else
+    echo -e "\033[31m /wp-config.php_bk is KO \033[0m"
+fi
+
+sleep 1
+
 echo ""
 echo "Finish"
